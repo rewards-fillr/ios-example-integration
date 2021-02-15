@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import {Button, Text, View, TextInput} from 'react-native';
-import ReactNative from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import FillrHeadlessMode from './FillrHeadlessModule';
 import FillrWebView from './FillrWebView';
-import { WebView } from 'react-native-webview';
 
 export default class HomeScreen extends React.Component {
   render() {
