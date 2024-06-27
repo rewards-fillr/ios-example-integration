@@ -7,59 +7,12 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class FillrProduct {
 
-    @IBOutlet var webView:WKWebView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        Fillr.sharedInstance().trackWebview(webView)
-        
-        // working
-        guard let url = URL(string: "https://getbootstrap.com/docs/4.5/examples/checkout") else {
-            return
-        }
-
-        if #available(iOS 16.4, *) {
-            webView.isInspectable = true
-        }
-        webView.load(URLRequest(url: url))
-        webView.navigationDelegate = self
-        FillrAutofill.sharedInstance().profilePayloadDelegate = self
+    static func inititalize(_ view:ViewController) {
+        FillrAutofill.sharedInstance().enabled = true
+        FillrAutofill.sharedInstance().profilePayloadDelegate = view
         FillrAutofill.sharedInstance().fillProvider = HeadlessBaseFillProvider()
-        webView.reload()
-    }
-
-}
-
-
-extension ViewController : WKNavigationDelegate {
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if Fillr.sharedInstance().canHandleWebViewRequest(navigationAction.request) {
-            Fillr.sharedInstance().handleWebViewRequest(navigationAction.request, forWebView: webView)
-            decisionHandler(.cancel)
-            return
-        }
-        decisionHandler(.allow)
-    }
-    
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print(#function, Date())
-        Fillr.sharedInstance().trackWebview(webView)
-        Fillr.sharedInstance()?.handleWebViewDidStartLoad(webView)
-    }
-    
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print(#function, Date())
-
-        Fillr.sharedInstance()?.handleWebViewDidStartLoad(webView)
-    }
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print(#function, Date())
-        Fillr.sharedInstance()?.handleWebViewDidFinishLoad(webView)
     }
 }
 
@@ -119,5 +72,7 @@ extension ViewController: FillrProfilePayloadDelegate {
         FillrAutofill.sharedInstance()?.fillForm(withMappings: mappingResult, andPayload: samplePayload, withFieldSelections: selectedFields)
     }
 }
+
+
 
 

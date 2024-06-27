@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         fillr?.initialise(with: fillrConfig)
         fillr?.enabled = true
         fillr?.debugMode = true
-        FillrAutofill.sharedInstance().enabled = true
         return true
     }
 

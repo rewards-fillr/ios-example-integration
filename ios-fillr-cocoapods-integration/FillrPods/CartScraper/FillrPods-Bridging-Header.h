@@ -6,8 +6,6 @@
 #import <FillrSDK/FillrWidgetAuth.h>
 #import <FillrSDK/FillrConfig.h>
 
-#import <FillrAutofillSDK/FillrAutofill.h>
-#import <FillrAutofillSDK/FillrAutofillDelegate.h>
-#import <FillrAutofillSDK/HeadlessBaseFillProvider.h>
-
-
+// Cartscraper
+#import <FillrCartScraperSDK/FillrCartScraper.h>
+#import <FillrCartScraperSDK/FillrCartInformationExtraction.h>
