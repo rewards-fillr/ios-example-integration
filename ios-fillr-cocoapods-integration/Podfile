@@ -5,42 +5,57 @@ use_frameworks!
 plugin 'cocoapods-art', :sources => [
   'fillr-ios-core-sdk', # core sdk is required by all products
   'fillr-ios-autofill-sdk',
-  'fillr-ios-embedded-sdk',
   'fillr-ios-cartscraper-sdk',
   'fillr-ios-product-page-scraper-sdk',
   'fillr-ios-page-classifier-sdk',
   'fillr-ios-order-scraper-sdk',
 ]
 
+# Integrating static library
 target "Autofill" do
-    pod 'fillr-autofill-static-xcframeworks'
-#    pod 'fillr-autofill-dynamic-xcframeworks', '1.2.0'
-    project "FillrPods.xcodeproj"
+    pod 'fillr-autofill-static-xcframeworks', '1.0.0'
 end
 
 target "CartScraper" do
-    pod 'fillr-cartscraper-static-xcframeworks'
-#    pod 'fillr-cartscraper-dynamic-xcframeworks', '1.3.0'
+    pod 'fillr-cartscraper-static-xcframeworks', '1.0.0'
 end
 
 target "ProductScraper" do
-    pod 'fillr-product-page-scraper-static-xcframeworks'
-#    pod 'fillr-product-page-scraper-dynamic-xcframeworks', '1.3.0'
+    pod 'fillr-product-page-scraper-static-xcframeworks', '1.0.0'
 end
 
 target "OrderScraper" do
-    pod 'fillr-page-classifier-static-xcframeworks'
-#    pod 'fillr-order-scraper-dynamic-xcframeworks', '1.3.0'
+    pod 'fillr-order-scraper-static-xcframeworks', '1.0.0'
 end
 
 target "PageClassifier" do
-    pod 'fillr-page-classifier-static-xcframeworks'
-#    pod 'fillr-page-classifier-dynamic-xcframeworks', '1.3.0'
+    pod 'fillr-page-classifier-static-xcframeworks', '1.0.0'
 end
 
+# Integrating dynamic framework
+#target "Autofill" do
+#    pod 'fillr-autofill-dynamic-xcframeworks', '1.0.0'
+#end
+#
+#target "CartScraper" do
+#    pod 'fillr-cartscraper-dynamic-xcframeworks', '1.0.0'
+#end
+#
+#target "ProductScraper" do
+#    pod 'fillr-product-page-scraper-dynamic-xcframeworks', '1.0.0'
+#end
+#
+#target "OrderScraper" do
+#    pod 'fillr-order-scraper-dynamic-xcframeworks', '1.0.0'
+#end
+#
+#target "PageClassifier" do
+#    pod 'fillr-page-classifier-dynamic-xcframeworks', '1.0.0'
+#end
 
 
-# Add the repository
+
+# 1. Add the repository
 #pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-core-sdk
 #pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk
 #pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk
@@ -48,7 +63,7 @@ end
 #pod repo-art add fillr-ios-page-classifier-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-page-classifier-sdk
 #pod repo-art add fillr-ios-order-scraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-order-scraper-sdk
 
-# Update the repository
+# 2. Update the repository
 #pod repo-art update fillr-ios-core-sdk
 #pod repo-art update fillr-ios-autofill-sdk
 #pod repo-art update fillr-ios-cartscraper-sdk
@@ -56,5 +71,6 @@ end
 #pod repo-art update fillr-ios-page-classifier-sdk
 #pod repo-art update fillr-ios-order-scraper-sdk
 
+# 3. Install pods
 #pod install
 

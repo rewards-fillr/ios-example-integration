@@ -16,12 +16,10 @@ class FillrProduct {
 }
 
 extension ViewController : FillrOrderConfirmationInformationExtractionDelegate {
-    func orderConfirmed(at url: URL!, withId orderId: String!, andDetails details: [AnyHashable : Any]!) {
-        let alert = UIAlertController(title: "Order Detected \(orderId ?? "")", message: details.debugDescription, preferredStyle: .alert)
+    func orderConfirmed(at url: URL!, with orderInformation: FillrOrderInformation!) {
+        let alert = UIAlertController(title: "Order Detected \(orderInformation.orderNumber ?? "")", message: orderInformation.json, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
-
 }
 

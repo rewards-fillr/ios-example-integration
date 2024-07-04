@@ -10,6 +10,7 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet var webView:WKWebView!
+    public var webUrl = "https://getbootstrap.com/docs/4.5/examples/checkout/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,7 @@ class ViewController: UIViewController {
         FillrProduct.inititalize(self)
         Fillr.sharedInstance().trackWebview(webView)
 
-        guard let url = URL(string: "https://macys.com") else {
+        guard let url = URL(string: webUrl) else {
             return
         }
 

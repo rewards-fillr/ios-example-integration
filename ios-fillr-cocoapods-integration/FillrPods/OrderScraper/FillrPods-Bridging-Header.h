@@ -9,6 +9,7 @@
 // Order Scraper
 #import <FillrOrderScraperSDK/FillrOrderScraper.h>
 #import <FillrOrderScraperSDK/FillrOrderConfirmationInformationExtraction.h>
+#import <FillrOrderScraperSDK/FillrOrderInformation.h>
 
 // Page Classifier
 #import <FillrPageClassifierSDK/FillrPageClassifier.h>
