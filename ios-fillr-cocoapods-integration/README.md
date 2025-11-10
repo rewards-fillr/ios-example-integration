@@ -28,17 +28,17 @@ password password
 ```
     
 3. Add an Fillr repository to your local cocoapod from terminal:
-
-`pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-core-sdk`
-`pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk`
-`pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk`
-
+```
+pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-core-sdk
+pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk
+pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk
+```
 4. Update fillr repository 
-
-`pod repo-art update fillr-ios-core-sdk`
-`pod repo-art update fillr-ios-autofill-sdk`
-`pod repo-art update fillr-ios-cartscraper-sdk`
-
+```
+pod repo-art update fillr-ios-core-sdk
+pod repo-art update fillr-ios-autofill-sdk
+pod repo-art update fillr-ios-cartscraper-sdk
+```
 4. Update your project Podfile, add the following, replace the target and version number:
 
 ```
@@ -46,7 +46,6 @@ plugin 'cocoapods-art', :sources => [
   'fillr-ios-core-sdk',
   'fillr-ios-autofill-sdk',
   'fillr-ios-cartscraper-sdk']
-
 ```
 You can integrate the static or dynamic library
 ```
