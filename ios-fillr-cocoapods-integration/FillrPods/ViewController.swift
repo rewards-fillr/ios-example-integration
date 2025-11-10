@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         }
         webView.load(URLRequest(url: url))
         webView.navigationDelegate = self
-
     }
 }
 

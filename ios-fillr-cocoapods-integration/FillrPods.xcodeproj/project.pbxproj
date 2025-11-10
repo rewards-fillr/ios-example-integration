@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078A3071B831FBE6AE5EBDFD /* Pods_OrderScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB07CB3ACE32158D6557B08 /* Pods_OrderScraper.framework */; };
 		1B0B8197272A27AB0014407D /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */; };
+		1B44F16F2EC29D0E00EF50B0 /* FillrSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE38982EBD53720003E3D2 /* FillrSDK.xcframework */; };
+		1B44F1712EC29D8900EF50B0 /* FillrCartScraperSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B44F1702EC29D8900EF50B0 /* FillrCartScraperSDK.xcframework */; };
 		1B4BF90626D323AB00A3B1CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */; };
 		1B4BF90826D323AC00A3B1CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */; };
 		1B4BF90A26D323AC00A3B1CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90926D323AC00A3B1CD /* ViewController.swift */; };
 		1B4BF90D26D323AC00A3B1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90B26D323AC00A3B1CD /* Main.storyboard */; };
 		1B4BF90F26D323AE00A3B1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */; };
 		1B4BF91226D323AE00A3B1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF91026D323AE00A3B1CD /* LaunchScreen.storyboard */; };
+		1BEE38972EBD53610003E3D2 /* FillrAutofillSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE38962EBD53610003E3D2 /* FillrAutofillSDK.xcframework */; };
+		1BEE38992EBD53720003E3D2 /* FillrSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE38982EBD53720003E3D2 /* FillrSDK.xcframework */; };
 		1BEF021A2C2CD8B8003B61CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90926D323AC00A3B1CD /* ViewController.swift */; };
 		1BEF021B2C2CD8B8003B61CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */; };
 		1BEF021C2C2CD8B8003B61CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */; };
@@ -22,47 +25,15 @@
 		1BEF02212C2CD8B8003B61CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF91026D323AE00A3B1CD /* LaunchScreen.storyboard */; };
 		1BEF02222C2CD8B8003B61CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */; };
 		1BEF02232C2CD8B8003B61CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90B26D323AC00A3B1CD /* Main.storyboard */; };
-		1BEF022D2C2CD8F2003B61CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90926D323AC00A3B1CD /* ViewController.swift */; };
-		1BEF022E2C2CD8F2003B61CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */; };
-		1BEF022F2C2CD8F2003B61CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */; };
-		1BEF02312C2CD8F2003B61CF /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */; };
-		1BEF02342C2CD8F2003B61CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF91026D323AE00A3B1CD /* LaunchScreen.storyboard */; };
-		1BEF02352C2CD8F2003B61CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */; };
-		1BEF02362C2CD8F2003B61CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90B26D323AC00A3B1CD /* Main.storyboard */; };
-		1BEF02402C2CD906003B61CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90926D323AC00A3B1CD /* ViewController.swift */; };
-		1BEF02412C2CD906003B61CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */; };
-		1BEF02422C2CD906003B61CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */; };
-		1BEF02442C2CD906003B61CF /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */; };
-		1BEF02472C2CD906003B61CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF91026D323AE00A3B1CD /* LaunchScreen.storyboard */; };
-		1BEF02482C2CD906003B61CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */; };
-		1BEF02492C2CD906003B61CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90B26D323AC00A3B1CD /* Main.storyboard */; };
-		1BEF02532C2CD914003B61CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90926D323AC00A3B1CD /* ViewController.swift */; };
-		1BEF02542C2CD914003B61CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */; };
-		1BEF02552C2CD914003B61CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */; };
-		1BEF02572C2CD914003B61CF /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */; };
-		1BEF025A2C2CD914003B61CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF91026D323AE00A3B1CD /* LaunchScreen.storyboard */; };
-		1BEF025B2C2CD914003B61CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */; };
-		1BEF025C2C2CD914003B61CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BF90B26D323AC00A3B1CD /* Main.storyboard */; };
 		1BEF026F2C2CDB2D003B61CF /* ViewController+CartScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF026E2C2CDB2D003B61CF /* ViewController+CartScraper.swift */; };
 		1BEF02712C2CF7A1003B61CF /* ViewController+Autofill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF02702C2CF7A1003B61CF /* ViewController+Autofill.swift */; };
-		1BEF02762C2D2013003B61CF /* ViewController+OrderScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF02752C2D200F003B61CF /* ViewController+OrderScraper.swift */; };
-		1BEF027B2C2D2045003B61CF /* ViewController+PageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF02772C2D2037003B61CF /* ViewController+PageClassifier.swift */; };
-		1BEF027C2C2D2049003B61CF /* ProductScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF027A2C2D2041003B61CF /* ProductScraper.swift */; };
-		1FF0B8D9064BEA2A6D33A9A6 /* Pods_Autofill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA6D6413C4B41166FE3D6CD /* Pods_Autofill.framework */; };
-		5E64B83B6656BCBE08410322 /* Pods_CartScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EE315E87A8EC375BC29892 /* Pods_CartScraper.framework */; };
-		77A22EB68C4D38722C053477 /* Pods_PageClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FC240A04A1C97A0890532 /* Pods_PageClassifier.framework */; };
-		A65591378672D7FF35346977 /* Pods_ProductScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA81403D38E9409E57F0A585 /* Pods_ProductScraper.framework */; };
+		716EA8EE71C095C615B1BB83 /* Pods_Autofill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F072D85EFB20783358E3EA9 /* Pods_Autofill.framework */; };
+		748AA52D5A075C06E7A348A4 /* Pods_CartScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324E56EC79C38E6D7FDF0931 /* Pods_CartScraper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F81740CA593D6D51B0F5472 /* Pods-OrderScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderScraper.release.xcconfig"; path = "Target Support Files/Pods-OrderScraper/Pods-OrderScraper.release.xcconfig"; sourceTree = "<group>"; };
-		103A791F476A6B2A41392BD1 /* Pods-CartScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartScraper.debug.xcconfig"; path = "Target Support Files/Pods-CartScraper/Pods-CartScraper.debug.xcconfig"; sourceTree = "<group>"; };
-		16FE059706B93B74C6CF2072 /* Pods-ProductScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductScraper.debug.xcconfig"; path = "Target Support Files/Pods-ProductScraper/Pods-ProductScraper.debug.xcconfig"; sourceTree = "<group>"; };
 		1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
-		1B17CE0D2BCD87FD009A5B1A /* FillrAutofillSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrAutofillSDK.xcframework; path = "Pods/fillr-autofill-static-xcframeworks/fillr-sdk/XCFrameworks/FillrAutofillSDK.xcframework"; sourceTree = "<group>"; };
-		1B17CE0F2BCD87FD009A5B1A /* FillrSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrSDK.xcframework; path = "Pods/fillr-core-static-xcframeworks/fillr-sdk/XCFrameworks/FillrSDK.xcframework"; sourceTree = "<group>"; };
-		1B207F6D2A93EA8700123E6A /* libFillrSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFillrSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B207F6F2A93EE1E00123E6A /* libFillrEmbeddedSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFillrEmbeddedSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B44F1702EC29D8900EF50B0 /* FillrCartScraperSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrCartScraperSDK.xcframework; path = "Pods/fillr-cartscraper-static-xcframeworks/fillr-sdk/XCFrameworks/FillrCartScraperSDK.xcframework"; sourceTree = "<group>"; };
 		1B4BF90226D323AB00A3B1CD /* Autofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autofill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4BF90526D323AB00A3B1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4BF90726D323AC00A3B1CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,41 +41,21 @@
 		1B4BF90C26D323AC00A3B1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B4BF90E26D323AE00A3B1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4BF91126D323AE00A3B1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1B81834E2BC66ECE00227BF2 /* FillrAutofillSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrAutofillSDK.xcframework; path = "Pods/fillr-autofill-xcframeworks/fillr-sdk/XCFrameworks/FillrAutofillSDK.xcframework"; sourceTree = "<group>"; };
-		1B8183502BC66ECE00227BF2 /* FillrSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrSDK.xcframework; path = "Pods/fillr-core-xcframeworks/fillr-sdk/XCFrameworks/FillrSDK.xcframework"; sourceTree = "<group>"; };
+		1BEE38962EBD53610003E3D2 /* FillrAutofillSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrAutofillSDK.xcframework; path = "Pods/fillr-autofill-static-xcframeworks/fillr-sdk/XCFrameworks/FillrAutofillSDK.xcframework"; sourceTree = "<group>"; };
+		1BEE38982EBD53720003E3D2 /* FillrSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FillrSDK.xcframework; path = "Pods/fillr-core-static-xcframeworks/fillr-sdk/XCFrameworks/FillrSDK.xcframework"; sourceTree = "<group>"; };
 		1BEF02282C2CD8B8003B61CF /* CartScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEF023B2C2CD8F2003B61CF /* ProductScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEF024E2C2CD906003B61CF /* OrderScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEF02612C2CD914003B61CF /* PageClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEF02632C2CDABD003B61CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEF02652C2CDABD003B61CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEF02672C2CDABD003B61CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEF02692C2CDABD003B61CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEF026B2C2CDABD003B61CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEF026E2C2CDB2D003B61CF /* ViewController+CartScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CartScraper.swift"; sourceTree = "<group>"; };
 		1BEF02702C2CF7A1003B61CF /* ViewController+Autofill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Autofill.swift"; sourceTree = "<group>"; };
 		1BEF02722C2D1FC6003B61CF /* FillrPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FillrPods-Bridging-Header.h"; sourceTree = "<group>"; };
 		1BEF02732C2D1FE4003B61CF /* FillrPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FillrPods-Bridging-Header.h"; sourceTree = "<group>"; };
-		1BEF02742C2D200F003B61CF /* FillrPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FillrPods-Bridging-Header.h"; sourceTree = "<group>"; };
-		1BEF02752C2D200F003B61CF /* ViewController+OrderScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+OrderScraper.swift"; sourceTree = "<group>"; };
-		1BEF02772C2D2037003B61CF /* ViewController+PageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PageClassifier.swift"; sourceTree = "<group>"; };
-		1BEF02782C2D2037003B61CF /* FillrPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FillrPods-Bridging-Header.h"; sourceTree = "<group>"; };
-		1BEF02792C2D2041003B61CF /* FillrPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FillrPods-Bridging-Header.h"; sourceTree = "<group>"; };
-		1BEF027A2C2D2041003B61CF /* ProductScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScraper.swift; sourceTree = "<group>"; };
-		36EB581C9BA90E15C54D8DA2 /* Pods-PageClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageClassifier.release.xcconfig"; path = "Target Support Files/Pods-PageClassifier/Pods-PageClassifier.release.xcconfig"; sourceTree = "<group>"; };
-		59D97A6BC5DD161FD9643D90 /* Pods-FillrPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillrPods.debug.xcconfig"; path = "Target Support Files/Pods-FillrPods/Pods-FillrPods.debug.xcconfig"; sourceTree = "<group>"; };
-		5AA6D6413C4B41166FE3D6CD /* Pods_Autofill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autofill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A834E712FB80A5C36D3E74 /* Pods-CartScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartScraper.release.xcconfig"; path = "Target Support Files/Pods-CartScraper/Pods-CartScraper.release.xcconfig"; sourceTree = "<group>"; };
-		6F961BBAC428347A657C3445 /* Pods-ProductScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductScraper.release.xcconfig"; path = "Target Support Files/Pods-ProductScraper/Pods-ProductScraper.release.xcconfig"; sourceTree = "<group>"; };
-		75EE315E87A8EC375BC29892 /* Pods_CartScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90152DAB736A50EC5864289E /* Pods-Autofill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autofill.debug.xcconfig"; path = "Target Support Files/Pods-Autofill/Pods-Autofill.debug.xcconfig"; sourceTree = "<group>"; };
-		995C5D55B9A963EE5A5B2806 /* Pods-FillrPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillrPods.release.xcconfig"; path = "Target Support Files/Pods-FillrPods/Pods-FillrPods.release.xcconfig"; sourceTree = "<group>"; };
-		A321190DC76053E4ABDDAEF2 /* Pods-OrderScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderScraper.debug.xcconfig"; path = "Target Support Files/Pods-OrderScraper/Pods-OrderScraper.debug.xcconfig"; sourceTree = "<group>"; };
-		AA81403D38E9409E57F0A585 /* Pods_ProductScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8448F43D7A4DDA1845E62CA /* Pods-Autofill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autofill.release.xcconfig"; path = "Target Support Files/Pods-Autofill/Pods-Autofill.release.xcconfig"; sourceTree = "<group>"; };
-		C01FC240A04A1C97A0890532 /* Pods_PageClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12D01F82AC339F0928F75FD /* Pods-PageClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageClassifier.debug.xcconfig"; path = "Target Support Files/Pods-PageClassifier/Pods-PageClassifier.debug.xcconfig"; sourceTree = "<group>"; };
-		EFB07CB3ACE32158D6557B08 /* Pods_OrderScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F072D85EFB20783358E3EA9 /* Pods_Autofill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autofill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324E56EC79C38E6D7FDF0931 /* Pods_CartScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7A6968769EB451E7D9D095 /* Pods-CartScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartScraper.release.xcconfig"; path = "Target Support Files/Pods-CartScraper/Pods-CartScraper.release.xcconfig"; sourceTree = "<group>"; };
+		5B1606BAD9A704B61BC965D8 /* Pods-CartScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartScraper.debug.xcconfig"; path = "Target Support Files/Pods-CartScraper/Pods-CartScraper.debug.xcconfig"; sourceTree = "<group>"; };
+		729A6CCFBCFB70021BCC5C97 /* Pods-Autofill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autofill.debug.xcconfig"; path = "Target Support Files/Pods-Autofill/Pods-Autofill.debug.xcconfig"; sourceTree = "<group>"; };
+		EC9CDA021DB283B3C3F3996E /* Pods-Autofill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autofill.release.xcconfig"; path = "Target Support Files/Pods-Autofill/Pods-Autofill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEE38992EBD53720003E3D2 /* FillrSDK.xcframework in Frameworks */,
+				1BEE38972EBD53610003E3D2 /* FillrAutofillSDK.xcframework in Frameworks */,
 				1B0B8197272A27AB0014407D /* libswiftWebKit.tbd in Frameworks */,
-				1FF0B8D9064BEA2A6D33A9A6 /* Pods_Autofill.framework in Frameworks */,
+				716EA8EE71C095C615B1BB83 /* Pods_Autofill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,35 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B44F1712EC29D8900EF50B0 /* FillrCartScraperSDK.xcframework in Frameworks */,
+				1B44F16F2EC29D0E00EF50B0 /* FillrSDK.xcframework in Frameworks */,
 				1BEF021E2C2CD8B8003B61CF /* libswiftWebKit.tbd in Frameworks */,
-				5E64B83B6656BCBE08410322 /* Pods_CartScraper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02302C2CD8F2003B61CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02312C2CD8F2003B61CF /* libswiftWebKit.tbd in Frameworks */,
-				A65591378672D7FF35346977 /* Pods_ProductScraper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02432C2CD906003B61CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02442C2CD906003B61CF /* libswiftWebKit.tbd in Frameworks */,
-				078A3071B831FBE6AE5EBDFD /* Pods_OrderScraper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02562C2CD914003B61CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02572C2CD914003B61CF /* libswiftWebKit.tbd in Frameworks */,
-				77A22EB68C4D38722C053477 /* Pods_PageClassifier.framework in Frameworks */,
+				748AA52D5A075C06E7A348A4 /* Pods_CartScraper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,18 +87,12 @@
 		09EFD61344F73A93426E1D8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B17CE0D2BCD87FD009A5B1A /* FillrAutofillSDK.xcframework */,
-				1B17CE0F2BCD87FD009A5B1A /* FillrSDK.xcframework */,
-				1B81834E2BC66ECE00227BF2 /* FillrAutofillSDK.xcframework */,
-				1B8183502BC66ECE00227BF2 /* FillrSDK.xcframework */,
-				1B207F6F2A93EE1E00123E6A /* libFillrEmbeddedSDK.a */,
-				1B207F6D2A93EA8700123E6A /* libFillrSDK.a */,
+				1B44F1702EC29D8900EF50B0 /* FillrCartScraperSDK.xcframework */,
+				1BEE38982EBD53720003E3D2 /* FillrSDK.xcframework */,
+				1BEE38962EBD53610003E3D2 /* FillrAutofillSDK.xcframework */,
 				1B0B8196272A27AB0014407D /* libswiftWebKit.tbd */,
-				5AA6D6413C4B41166FE3D6CD /* Pods_Autofill.framework */,
-				75EE315E87A8EC375BC29892 /* Pods_CartScraper.framework */,
-				EFB07CB3ACE32158D6557B08 /* Pods_OrderScraper.framework */,
-				C01FC240A04A1C97A0890532 /* Pods_PageClassifier.framework */,
-				AA81403D38E9409E57F0A585 /* Pods_ProductScraper.framework */,
+				1F072D85EFB20783358E3EA9 /* Pods_Autofill.framework */,
+				324E56EC79C38E6D7FDF0931 /* Pods_CartScraper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,9 +112,6 @@
 			children = (
 				1B4BF90226D323AB00A3B1CD /* Autofill.app */,
 				1BEF02282C2CD8B8003B61CF /* CartScraper.app */,
-				1BEF023B2C2CD8F2003B61CF /* ProductScraper.app */,
-				1BEF024E2C2CD906003B61CF /* OrderScraper.app */,
-				1BEF02612C2CD914003B61CF /* PageClassifier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +125,6 @@
 				1BEF026D2C2CDAE5003B61CF /* Assets */,
 				1BEF02642C2CDABD003B61CF /* Autofill */,
 				1BEF026C2C2CDABD003B61CF /* CartScraper */,
-				1BEF02682C2CDABD003B61CF /* OrderScraper */,
-				1BEF02662C2CDABD003B61CF /* PageClassifier */,
-				1BEF026A2C2CDABD003B61CF /* ProductScraper */,
 			);
 			path = FillrPods;
 			sourceTree = "<group>";
@@ -221,36 +137,6 @@
 				1BEF02632C2CDABD003B61CF /* Info.plist */,
 			);
 			path = Autofill;
-			sourceTree = "<group>";
-		};
-		1BEF02662C2CDABD003B61CF /* PageClassifier */ = {
-			isa = PBXGroup;
-			children = (
-				1BEF02782C2D2037003B61CF /* FillrPods-Bridging-Header.h */,
-				1BEF02772C2D2037003B61CF /* ViewController+PageClassifier.swift */,
-				1BEF02652C2CDABD003B61CF /* Info.plist */,
-			);
-			path = PageClassifier;
-			sourceTree = "<group>";
-		};
-		1BEF02682C2CDABD003B61CF /* OrderScraper */ = {
-			isa = PBXGroup;
-			children = (
-				1BEF02742C2D200F003B61CF /* FillrPods-Bridging-Header.h */,
-				1BEF02752C2D200F003B61CF /* ViewController+OrderScraper.swift */,
-				1BEF02672C2CDABD003B61CF /* Info.plist */,
-			);
-			path = OrderScraper;
-			sourceTree = "<group>";
-		};
-		1BEF026A2C2CDABD003B61CF /* ProductScraper */ = {
-			isa = PBXGroup;
-			children = (
-				1BEF02792C2D2041003B61CF /* FillrPods-Bridging-Header.h */,
-				1BEF027A2C2D2041003B61CF /* ProductScraper.swift */,
-				1BEF02692C2CDABD003B61CF /* Info.plist */,
-			);
-			path = ProductScraper;
 			sourceTree = "<group>";
 		};
 		1BEF026C2C2CDABD003B61CF /* CartScraper */ = {
@@ -276,18 +162,10 @@
 		7E5EFC53E08C4E4869AF71E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59D97A6BC5DD161FD9643D90 /* Pods-FillrPods.debug.xcconfig */,
-				995C5D55B9A963EE5A5B2806 /* Pods-FillrPods.release.xcconfig */,
-				90152DAB736A50EC5864289E /* Pods-Autofill.debug.xcconfig */,
-				B8448F43D7A4DDA1845E62CA /* Pods-Autofill.release.xcconfig */,
-				103A791F476A6B2A41392BD1 /* Pods-CartScraper.debug.xcconfig */,
-				65A834E712FB80A5C36D3E74 /* Pods-CartScraper.release.xcconfig */,
-				A321190DC76053E4ABDDAEF2 /* Pods-OrderScraper.debug.xcconfig */,
-				0F81740CA593D6D51B0F5472 /* Pods-OrderScraper.release.xcconfig */,
-				E12D01F82AC339F0928F75FD /* Pods-PageClassifier.debug.xcconfig */,
-				36EB581C9BA90E15C54D8DA2 /* Pods-PageClassifier.release.xcconfig */,
-				16FE059706B93B74C6CF2072 /* Pods-ProductScraper.debug.xcconfig */,
-				6F961BBAC428347A657C3445 /* Pods-ProductScraper.release.xcconfig */,
+				729A6CCFBCFB70021BCC5C97 /* Pods-Autofill.debug.xcconfig */,
+				EC9CDA021DB283B3C3F3996E /* Pods-Autofill.release.xcconfig */,
+				5B1606BAD9A704B61BC965D8 /* Pods-CartScraper.debug.xcconfig */,
+				4F7A6968769EB451E7D9D095 /* Pods-CartScraper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -299,11 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B4BF91626D323AE00A3B1CD /* Build configuration list for PBXNativeTarget "Autofill" */;
 			buildPhases = (
-				2957BF2FB17960117ADA8728 /* [CP] Check Pods Manifest.lock */,
+				749C895AC7222CE21153DA6D /* [CP] Check Pods Manifest.lock */,
 				1B4BF8FE26D323AB00A3B1CD /* Sources */,
 				1B4BF8FF26D323AB00A3B1CD /* Frameworks */,
 				1B4BF90026D323AB00A3B1CD /* Resources */,
-				69B167A5B53DC1B2FD724283 /* [CP] Copy Pods Resources */,
+				CD1FC066E1B4F6FD413DB006 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,11 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BEF02252C2CD8B8003B61CF /* Build configuration list for PBXNativeTarget "CartScraper" */;
 			buildPhases = (
-				1BEF02182C2CD8B8003B61CF /* [CP] Check Pods Manifest.lock */,
+				D9EA043B9752FA712F969B97 /* [CP] Check Pods Manifest.lock */,
 				1BEF02192C2CD8B8003B61CF /* Sources */,
 				1BEF021D2C2CD8B8003B61CF /* Frameworks */,
 				1BEF02202C2CD8B8003B61CF /* Resources */,
-				1BEF02242C2CD8B8003B61CF /* [CP] Copy Pods Resources */,
+				0874C4562A87426F86318DA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,63 +209,6 @@
 			name = CartScraper;
 			productName = FillrPods;
 			productReference = 1BEF02282C2CD8B8003B61CF /* CartScraper.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1BEF022A2C2CD8F2003B61CF /* ProductScraper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEF02382C2CD8F2003B61CF /* Build configuration list for PBXNativeTarget "ProductScraper" */;
-			buildPhases = (
-				1BEF022B2C2CD8F2003B61CF /* [CP] Check Pods Manifest.lock */,
-				1BEF022C2C2CD8F2003B61CF /* Sources */,
-				1BEF02302C2CD8F2003B61CF /* Frameworks */,
-				1BEF02332C2CD8F2003B61CF /* Resources */,
-				1BEF02372C2CD8F2003B61CF /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ProductScraper;
-			productName = FillrPods;
-			productReference = 1BEF023B2C2CD8F2003B61CF /* ProductScraper.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1BEF023D2C2CD906003B61CF /* OrderScraper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEF024B2C2CD906003B61CF /* Build configuration list for PBXNativeTarget "OrderScraper" */;
-			buildPhases = (
-				1BEF023E2C2CD906003B61CF /* [CP] Check Pods Manifest.lock */,
-				1BEF023F2C2CD906003B61CF /* Sources */,
-				1BEF02432C2CD906003B61CF /* Frameworks */,
-				1BEF02462C2CD906003B61CF /* Resources */,
-				1BEF024A2C2CD906003B61CF /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OrderScraper;
-			productName = FillrPods;
-			productReference = 1BEF024E2C2CD906003B61CF /* OrderScraper.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1BEF02502C2CD914003B61CF /* PageClassifier */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEF025E2C2CD914003B61CF /* Build configuration list for PBXNativeTarget "PageClassifier" */;
-			buildPhases = (
-				1BEF02512C2CD914003B61CF /* [CP] Check Pods Manifest.lock */,
-				1BEF02522C2CD914003B61CF /* Sources */,
-				1BEF02562C2CD914003B61CF /* Frameworks */,
-				1BEF02592C2CD914003B61CF /* Resources */,
-				1BEF025D2C2CD914003B61CF /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PageClassifier;
-			productName = FillrPods;
-			productReference = 1BEF02612C2CD914003B61CF /* PageClassifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -420,9 +241,6 @@
 			targets = (
 				1B4BF90126D323AB00A3B1CD /* Autofill */,
 				1BEF02172C2CD8B8003B61CF /* CartScraper */,
-				1BEF022A2C2CD8F2003B61CF /* ProductScraper */,
-				1BEF023D2C2CD906003B61CF /* OrderScraper */,
-				1BEF02502C2CD914003B61CF /* PageClassifier */,
 			);
 		};
 /* End PBXProject section */
@@ -448,62 +266,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BEF02332C2CD8F2003B61CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02342C2CD8F2003B61CF /* LaunchScreen.storyboard in Resources */,
-				1BEF02352C2CD8F2003B61CF /* Assets.xcassets in Resources */,
-				1BEF02362C2CD8F2003B61CF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02462C2CD906003B61CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02472C2CD906003B61CF /* LaunchScreen.storyboard in Resources */,
-				1BEF02482C2CD906003B61CF /* Assets.xcassets in Resources */,
-				1BEF02492C2CD906003B61CF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02592C2CD914003B61CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF025A2C2CD914003B61CF /* LaunchScreen.storyboard in Resources */,
-				1BEF025B2C2CD914003B61CF /* Assets.xcassets in Resources */,
-				1BEF025C2C2CD914003B61CF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1BEF02182C2CD8B8003B61CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CartScraper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF02242C2CD8B8003B61CF /* [CP] Copy Pods Resources */ = {
+		0874C4562A87426F86318DA4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,133 +277,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CartScraper/Pods-CartScraper-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CartScraper/Pods-CartScraper-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CartScraper/Pods-CartScraper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1BEF022B2C2CD8F2003B61CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ProductScraper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF02372C2CD8F2003B61CF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProductScraper/Pods-ProductScraper-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProductScraper/Pods-ProductScraper-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProductScraper/Pods-ProductScraper-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF023E2C2CD906003B61CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OrderScraper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF024A2C2CD906003B61CF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OrderScraper/Pods-OrderScraper-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OrderScraper/Pods-OrderScraper-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrderScraper/Pods-OrderScraper-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF02512C2CD914003B61CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PageClassifier-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BEF025D2C2CD914003B61CF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PageClassifier/Pods-PageClassifier-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PageClassifier/Pods-PageClassifier-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PageClassifier/Pods-PageClassifier-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2957BF2FB17960117ADA8728 /* [CP] Check Pods Manifest.lock */ = {
+		749C895AC7222CE21153DA6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -659,7 +312,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		69B167A5B53DC1B2FD724283 /* [CP] Copy Pods Resources */ = {
+		CD1FC066E1B4F6FD413DB006 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -667,13 +320,39 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Autofill/Pods-Autofill-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Autofill/Pods-Autofill-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Autofill/Pods-Autofill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EA043B9752FA712F969B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartScraper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -698,39 +377,6 @@
 				1BEF021B2C2CD8B8003B61CF /* AppDelegate.swift in Sources */,
 				1BEF026F2C2CDB2D003B61CF /* ViewController+CartScraper.swift in Sources */,
 				1BEF021C2C2CD8B8003B61CF /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF022C2C2CD8F2003B61CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF027C2C2D2049003B61CF /* ProductScraper.swift in Sources */,
-				1BEF022D2C2CD8F2003B61CF /* ViewController.swift in Sources */,
-				1BEF022E2C2CD8F2003B61CF /* AppDelegate.swift in Sources */,
-				1BEF022F2C2CD8F2003B61CF /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF023F2C2CD906003B61CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02402C2CD906003B61CF /* ViewController.swift in Sources */,
-				1BEF02762C2D2013003B61CF /* ViewController+OrderScraper.swift in Sources */,
-				1BEF02412C2CD906003B61CF /* AppDelegate.swift in Sources */,
-				1BEF02422C2CD906003B61CF /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEF02522C2CD914003B61CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BEF02532C2CD914003B61CF /* ViewController.swift in Sources */,
-				1BEF027B2C2D2045003B61CF /* ViewController+PageClassifier.swift in Sources */,
-				1BEF02542C2CD914003B61CF /* AppDelegate.swift in Sources */,
-				1BEF02552C2CD914003B61CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,7 +522,7 @@
 		};
 		1B4BF91726D323AE00A3B1CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90152DAB736A50EC5864289E /* Pods-Autofill.debug.xcconfig */;
+			baseConfigurationReference = 729A6CCFBCFB70021BCC5C97 /* Pods-Autofill.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -903,13 +549,6 @@
 					"@loader_path/Frameworks",
 				);
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(PROJECT_DIR)/FillrPods/**",
-					"/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TARGET_BUILD_DIR)/**",
-				);
 				MARKETING_VERSION = 10.2.2;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
@@ -924,7 +563,7 @@
 		};
 		1B4BF91826D323AE00A3B1CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8448F43D7A4DDA1845E62CA /* Pods-Autofill.release.xcconfig */;
+			baseConfigurationReference = EC9CDA021DB283B3C3F3996E /* Pods-Autofill.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -951,11 +590,6 @@
 					"@loader_path/Frameworks",
 				);
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-				);
 				MARKETING_VERSION = 10.2.2;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
@@ -969,7 +603,7 @@
 		};
 		1BEF02262C2CD8B8003B61CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 103A791F476A6B2A41392BD1 /* Pods-CartScraper.debug.xcconfig */;
+			baseConfigurationReference = 5B1606BAD9A704B61BC965D8 /* Pods-CartScraper.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -995,13 +629,6 @@
 					"@loader_path/Frameworks",
 				);
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(PROJECT_DIR)/FillrPods/**",
-					"/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TARGET_BUILD_DIR)/**",
-				);
 				MARKETING_VERSION = 10.2.2;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
@@ -1016,7 +643,7 @@
 		};
 		1BEF02272C2CD8B8003B61CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65A834E712FB80A5C36D3E74 /* Pods-CartScraper.release.xcconfig */;
+			baseConfigurationReference = 4F7A6968769EB451E7D9D095 /* Pods-CartScraper.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1042,296 +669,12 @@
 					"@loader_path/Frameworks",
 				);
 				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-				);
 				MARKETING_VERSION = 10.2.2;
 				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/CartScraper/FillrPods-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1BEF02392C2CD8F2003B61CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16FE059706B93B74C6CF2072 /* Pods-ProductScraper.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/ProductScraper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(PROJECT_DIR)/FillrPods/**",
-					"/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TARGET_BUILD_DIR)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/ProductScraper/FillrPods-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1BEF023A2C2CD8F2003B61CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F961BBAC428347A657C3445 /* Pods-ProductScraper.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/ProductScraper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/ProductScraper/FillrPods-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1BEF024C2C2CD906003B61CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A321190DC76053E4ABDDAEF2 /* Pods-OrderScraper.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/OrderScraper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(PROJECT_DIR)/FillrPods/**",
-					"/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TARGET_BUILD_DIR)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/OrderScraper/FillrPods-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1BEF024D2C2CD906003B61CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F81740CA593D6D51B0F5472 /* Pods-OrderScraper.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/OrderScraper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/OrderScraper/FillrPods-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1BEF025F2C2CD914003B61CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E12D01F82AC339F0928F75FD /* Pods-PageClassifier.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/PageClassifier/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(PROJECT_DIR)/FillrPods/**",
-					"/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-					"$(TARGET_BUILD_DIR)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/PageClassifier/FillrPods-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1BEF02602C2CD914003B61CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36EB581C9BA90E15C54D8DA2 /* Pods-PageClassifier.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5024;
-				DEVELOPMENT_TEAM = 8SV35BWXT7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/fillr-xcframeworks-headless-only/fillr-sdk/XCFrameworks\"",
-					/usr/lib/swift,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/**",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FillrPods/PageClassifier/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					/usr/lib/swift,
-					"@loader_path/Frameworks",
-				);
-				LD_VERIFY_BITCODE = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift/**",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/**",
-				);
-				MARKETING_VERSION = 10.2.2;
-				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.fillrbrowser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FillrPods/PageClassifier/FillrPods-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1363,33 +706,6 @@
 			buildConfigurations = (
 				1BEF02262C2CD8B8003B61CF /* Debug */,
 				1BEF02272C2CD8B8003B61CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BEF02382C2CD8F2003B61CF /* Build configuration list for PBXNativeTarget "ProductScraper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BEF02392C2CD8F2003B61CF /* Debug */,
-				1BEF023A2C2CD8F2003B61CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BEF024B2C2CD906003B61CF /* Build configuration list for PBXNativeTarget "OrderScraper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BEF024C2C2CD906003B61CF /* Debug */,
-				1BEF024D2C2CD906003B61CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BEF025E2C2CD914003B61CF /* Build configuration list for PBXNativeTarget "PageClassifier" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BEF025F2C2CD914003B61CF /* Debug */,
-				1BEF02602C2CD914003B61CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,7 +5,3 @@
 #import <FillrSDK/Fillr.h>
 #import <FillrSDK/FillrWidgetAuth.h>
 #import <FillrSDK/FillrConfig.h>
-
-// Cartscraper
-#import <FillrCartScraperSDK/FillrCartScraper.h>
-#import <FillrCartScraperSDK/FillrCartInformationExtraction.h>
