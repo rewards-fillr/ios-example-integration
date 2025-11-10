@@ -33,13 +33,15 @@ pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-
 pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk
 pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk
 ```
+
 4. Update fillr repository 
 ```
 pod repo-art update fillr-ios-core-sdk
 pod repo-art update fillr-ios-autofill-sdk
 pod repo-art update fillr-ios-cartscraper-sdk
 ```
-4. Update your project Podfile, add the following, replace the target and version number:
+
+5. Update your project Podfile, add the following, replace the target and version number:
 
 ```
 plugin 'cocoapods-art', :sources => [
@@ -61,9 +63,9 @@ target "your-target" do
 end
 ```
 
-5. Run `pod install` to install Fillr SDK, you should be able to see Fillr SDK header files and static library file under `Pods` folder. Now you can continue with your integration
+6. Run `pod install` to install Fillr SDK, you should be able to see Fillr SDK header files and static library file under `Pods` folder. Now you can continue with your integration
     
-4. You should be able to run the project, the webview will load page https://getbootstrap.com/docs/4.5/examples/checkout, and it should fill the form with sample profile.
+7. You should be able to run the project, the webview will load page https://getbootstrap.com/docs/4.5/examples/checkout, and it should fill the form with sample profile.
 
 
 ### Further Resources
