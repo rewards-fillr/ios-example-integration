@@ -5,8 +5,3 @@
 #import <FillrSDK/Fillr.h>
 #import <FillrSDK/FillrWidgetAuth.h>
 #import <FillrSDK/FillrConfig.h>
-
-// Autofill
-#import <FillrAutofillSDK/FillrAutofill.h>
-#import <FillrAutofillSDK/FillrAutofillDelegate.h>
-#import <FillrAutofillSDK/HeadlessBaseFillProvider.h>

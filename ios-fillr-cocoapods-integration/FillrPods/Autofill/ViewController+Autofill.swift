@@ -6,19 +6,23 @@
 //
 import UIKit
 import WebKit
+import FillrAutofillSDK
+
+let headLessBaseFillProvider = HeadlessBaseFillProvider()
 
 class FillrProduct {
 
     static func inititalize(_ view:ViewController) {
-        FillrAutofill.sharedInstance().enabled = true
-        FillrAutofill.sharedInstance().profilePayloadDelegate = view
-        FillrAutofill.sharedInstance().fillProvider = HeadlessBaseFillProvider()
+        FillrAutofill.sharedInstance.enabled = true
+        FillrAutofill.sharedInstance.profilePayloadDelegate = view
+        FillrAutofill.sharedInstance.fillProvider = headLessBaseFillProvider
     }
 }
 
 extension ViewController: FillrProfilePayloadDelegate {
-    func onProfilePayloadRequested(forWebView webView: UIView!, mappingResult: [AnyHashable : Any]!, requestedFields: [Any]!, selectedFields: [AnyHashable : Any]!) {
-        
+
+    func onProfilePayloadRequestedForWebView(_ webView: UIView, mappingResult: [String : Any], requestedFields: [Any], selectedFields: [String : Any]) {
+
         print("Fields detected \(requestedFields.debugDescription)")
         
         let samplePayload = [
@@ -69,10 +73,6 @@ extension ViewController: FillrProfilePayloadDelegate {
             "CreditCards.CreditCard.NameOnCard": "John South",
             "CreditCards.CreditCard.CCV": "678"
         ]
-        FillrAutofill.sharedInstance()?.fillForm(withMappings: mappingResult, andPayload: samplePayload, withFieldSelections: selectedFields)
+        FillrAutofill.sharedInstance.fillForm(with: mappingResult, andPayload: samplePayload, withFieldSelections: selectedFields)
     }
 }
-
-
-
-

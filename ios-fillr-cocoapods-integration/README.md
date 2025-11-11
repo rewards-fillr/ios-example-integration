@@ -28,60 +28,44 @@ password password
 ```
     
 3. Add an Fillr repository to your local cocoapod from terminal:
-
-`pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-core-sdk`
-`pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk`
-`pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk`
-`pod repo-art add fillr-ios-product-page-scraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-product-page-scraper-sdk`
-`pod repo-art add fillr-ios-page-classifier-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-page-classifier-sdk`
-`pod repo-art add fillr-ios-order-scraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-order-scraper-sdk`
+```
+pod repo-art add fillr-ios-core-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-core-sdk
+pod repo-art add fillr-ios-autofill-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-autofill-sdk
+pod repo-art add fillr-ios-cartscraper-sdk https://fillr.jfrog.io/fillr/api/pods/fillr-ios-cartscraper-sdk
+```
 
 4. Update fillr repository 
+```
+pod repo-art update fillr-ios-core-sdk
+pod repo-art update fillr-ios-autofill-sdk
+pod repo-art update fillr-ios-cartscraper-sdk
+```
 
-`pod repo-art update fillr-ios-core-sdk`
-`pod repo-art update fillr-ios-autofill-sdk`
-`pod repo-art update fillr-ios-cartscraper-sdk`
-`pod repo-art update fillr-ios-product-page-scraper-sdk`
-`pod repo-art update fillr-ios-page-classifier-sdk`
-`pod repo-art update fillr-ios-order-scraper-sdk`
-
-4. Update your project Podfile, add the following, replace the target and version number:
+5. Update your project Podfile, add the following, replace the target and version number:
 
 ```
 plugin 'cocoapods-art', :sources => [
   'fillr-ios-core-sdk',
   'fillr-ios-autofill-sdk',
-  'fillr-ios-embedded-sdk',
-  'fillr-ios-cartscraper-sdk',
-  'fillr-ios-product-page-scraper-sdk',
-  'fillr-ios-page-classifier-sdk',
-  'fillr-ios-order-scraper-sdk',
-]
-
+  'fillr-ios-cartscraper-sdk']
 ```
 You can integrate the static or dynamic library
 ```
 target "your-target" do
   pod 'fillr-autofill-static-xcframeworks', '~> sdk.version.number'
   pod 'fillr-cartscraper-static-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-product-page-scraper-static-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-page-classifier-static-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-order-scraper-static-xcframeworks', '~> sdk.version.number'
 end
 ```
 ```
 target "your-target" do
   pod 'fillr-autofill-dynamic-xcframeworks', '~> sdk.version.number'
   pod 'fillr-cartscraper-dynamic-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-product-page-scraper-dynamic-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-page-classifier-dynamic-xcframeworks', '~> sdk.version.number'
-  pod 'fillr-order-scraper-dynamic-xcframeworks', '~> sdk.version.number'
 end
 ```
 
-5. Run `pod install` to install Fillr SDK, you should be able to see Fillr SDK header files and static library file under `Pods` folder. Now you can continue with your integration
+6. Run `pod install` to install Fillr SDK, you should be able to see Fillr SDK header files and static library file under `Pods` folder. Now you can continue with your integration
     
-4. You should be able to run the project, the webview will load page https://getbootstrap.com/docs/4.5/examples/checkout, and it should fill the form with sample profile.
+7. You should be able to run the project, the webview will load page https://getbootstrap.com/docs/4.5/examples/checkout, and it should fill the form with sample profile.
 
 
 ### Further Resources
@@ -90,6 +74,3 @@ If you require additional help getting your Fillr integration up and running, pl
 
 [Autofill](http://fillr.github.io/docs/sdk/ios/v1/FillrAutofill)
 [CartScraper](http://fillr.github.io/docs/sdk/ios/v1/FillrCartScraper)
-[Product Page Scraper](http://fillr.github.io/docs/sdk/ios/v1/FillrProductPageScraper)
-[Page Classifier](http://fillr.github.io/docs/sdk/ios/v1/FillrPageClassifier)
-[Order Scraper](http://fillr.github.io/docs/sdk/ios/v1/FillrOrderScraper)

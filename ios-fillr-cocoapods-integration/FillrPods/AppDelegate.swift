@@ -12,8 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let remoteDepAuth = FillrWidgetAuth(username: "USERNAME", password: "PASSWORD")
-        let fillrConfig = FillrConfig(devKey: "DEV_KEY", secretKey: "SECRET_KEY", remoteDependencyAuth: remoteDepAuth)
+        let remoteDepAuth = FillrWidgetAuth(username: <#T##String#>, password: <#T##String#>)
+        let fillrConfig = FillrConfig(devKey: <#T##String!#>, secretKey: <#T##String!#>, remoteDependencyAuth: remoteDepAuth)
         let fillr = Fillr.sharedInstance()
 
         fillr?.initialise(with: fillrConfig)
@@ -35,7 +35,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
-
